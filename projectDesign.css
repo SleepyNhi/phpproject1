@@ -1,0 +1,275 @@
+.GameBody {
+	width: 800px;
+	height: 550px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 100px;
+	margin-bottom: auto;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+        background-image: url("http://www.fightersgeneration.com/nz2/game/guiltygear-xx-reload-background-phantom-city.png");
+        background-size: cover;
+        background-repeat:   no-repeat;
+        background-position: center center; 
+}
+
+input{
+	width: 150px;
+	height: 17px;
+	font-size: 15px;
+	padding: 20px;
+	margin-top: 30px;
+}
+input[type=text] {
+    padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+input[type=password] {
+    padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+input[type=text]:focus {
+    border-color:#333;
+}
+
+input[type=submit] {
+    padding:5px 15px; 
+    background:#ccc; 
+    height: 30px;
+    width: 100px;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+p {
+	color:black;
+	text-align: center;
+    
+}
+h2 { 
+    letter-spacing: 3px;
+    font-family: serif;
+    color:white;
+    }
+
+.Start {
+	justify-content: center;
+	align-items: center;
+
+}
+
+h1 {
+	text-align: center;
+	margin-top: 50px;
+        letter-spacing: 1px;
+
+}
+
+#characterStats {
+    margin-top: 98px;
+    width: 200px;
+    height: 550px;
+    position: fixed; 
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    letter-spacing: 1px;
+/*    background: gray;*/
+}
+
+#characterStats table {
+    margin-top: 50px;
+}
+#characterStats td {
+    padding-top: 20px;
+    padding-left: 25px;
+}
+
+#characterSelection {
+    display: block;
+    text-align: center;
+}
+
+#characterSelection h1{
+    height:250px;
+    width:100px;
+    margin: 0px;
+    padding:0px;
+    
+}
+
+
+.leo_whitefang {
+    background-image: url("leo_whitefang.png");
+    background-size:fit;
+    background-repeat:no-repeat;
+    background-position: center center;
+    height:300px;
+    width:300px;
+    background-color: transparent;
+}
+
+.elphelt {
+    background-image: url("elphelt.png");
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-color: transparent;
+    height:300px;
+    width:300px;
+    transform:scaleX(-1);
+}
+
+
+
+#player1 {
+    position: relative;
+    right:100px;
+    top:100px;
+     -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+   
+}
+#comp1{
+    position: relative;
+    left:120px;
+    top:100px;
+     -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+    
+}
+
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-5px); }
+}
+
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-5px); }
+}
+
+
+#player1_hpbar{
+    position: relative;
+    width: 200px;
+    height: 20px;
+    bottom:60px;
+    left:80px;
+     background-color: red;
+    border: 2px solid  ivory;
+         -webkit-border-radius: 2px;
+
+}
+
+#bar1{
+    background-color:limegreen;
+    height: 20px;
+}
+
+#comp1_hpbar{
+    position: relative;
+    width: 200px;
+    height: 20px;
+    bottom:60px;
+    left:30px;
+    background-color: red;
+    border: 2px solid  ivory;
+         -webkit-border-radius: 2px;
+
+}
+
+
+#fight {
+    position:relative;
+    left:400px;
+    top:-600px;
+}
+
+#fight button{
+    width: 100px;
+    height: 40px;
+     -webkit-border-radius: 10px;
+    margin-left:20px;
+}
+
+#dialog1 {
+    width: 500px;
+    height:200px;
+    position: relative;
+    top:-550px;
+    left:450px;
+    letter-spacing: 2px;
+}
+
+
+.GameBody2 {
+	width: 800px;
+	height: 550px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 60px;
+	margin-bottom: auto;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+        background-image: url("LeoWin.png");
+        background-size: 100%;
+        background-repeat:   no-repeat;
+        background-position: center center; 
+}
+
+.GameBody3 {
+	width: 800px;
+	height: 550px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 60px;
+	margin-bottom: auto;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+        background-image: url("Elpheltwin.png");
+        background-size: 100%;
+        background-repeat:   no-repeat;
+        background-position: center center; 
+}
+
+img {
+    position: relative;
+    top:400px;
+    left:100px;
+}
+
+#replay{
+    
+    width: 100px;
+    height:20px;
+    position: relative;
+    left:-50px;
+    top:80px;
+    background-color: Transparent;
+    outline:none;
+}
+
+#replay2{
+    
+    
+    width: 100px;
+    height:20px;
+    position: relative;
+    left:-305px;
+    top:95px;
+    background-color: Transparent;
+    outline:none;
+}
